@@ -1,0 +1,33 @@
+{
+  "name": "bibliu-code-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules src",
+    "test": "NODE_ENV=test jest",
+    "test:coverage": "nyc npm test"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "flat": "^5.0.0",
+    "mongoose": "5.9.23",
+    "readdirp": "^3.4.0",
+    "xml2js": "^0.4.23",
+    "yargs": "15.4.1"
+  },
+  "devDependencies": {
+    "jest": "26.1.0",
+    "@jest/globals": "^26.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "mockingoose": "^2.13.2",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "all": true,
+    "extension": [
+      ".js"
+    ]
+  }
+}
